@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.app {
+  height: 100%;
+  position: relative;
+
+  display: grid;
+  grid-template-areas:
+    "header"
+    "message"
+    "right-part"
+    "Problmes"
+    "footer";
+  grid-template-rows: auto auto auto 1fr;
+  grid-template-columns: auto;
+  min-height: 100vh;
+}
+label {
+  font-size: large;
+}
+
+header {
+  grid-column: 1 / 2;
+  grid-row: 1/2;
+  grid-area: header;
+}
+
+.error-message {
+  grid-column: 1 / 2;
+  grid-row: 2/3;
+  grid-area: message;
+}
+
+.Problmes-panel {
+  grid-column: 1 / 2;
+  grid-row: 3/4;
+  grid-area: Problmes;
+}
+
+.right-part {
+  grid-column: 1 / 2;
+  grid-row: 4/5;
+  grid-area: right-part;
+}
+
+.footer {
+  grid-column: 1 / 3;
+  grid-row: 5/6;
+  grid-area: footer;
+  font-family: "Great Vibes", cursive;
+}
+
+header {
+  background-image: url("https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  text-align: center;
+  color: black;
+  font-family: "Great Vibes", cursive;
+  font-weight: 200;
+}
+
+.main-body {
+  margin-bottom: 5rem;
+}
+
+.reference {
+  color: #fff;
+  font-weight: bold;
+  font-size: small;
+}
+
+.resource-panel span {
+  margin: 0 8px 0 4px;
+  /* margin-bottom: 60px; */
+}
+
+.resource-panel {
+  padding: 1rem;
+  margin: 10px 0 20px 0;
+}
+
+.search-form input {
+  margin: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  border-color: #fff;
+  border-radius: 5px;
+  width: 240px;
+}
+
+.search-form button {
+  margin-right: 10px;
+  color: RGB(255, 179, 168);
+  background-color: #fff;
+  font-weight: bold;
+  border-color: #ccc;
+  box-shadow: #ccc;
+  border-radius: 7px;
+  padding: 10px;
+}
+.login-form {
+  justify-content: center;
+}
+
+.login-panel {
+  position: relative;
+  text-align: center;
+  margin: 30px auto 20px auto;
+  padding: 15px;
+}
+
+input {
+  outline: none;
+  border: 2px solid RGB(255, 179, 168);
+  border-radius: 1rem;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+}
+
+.resource-panel {
+  display: flex;
+  justify-content: center;
+}
+
+.login-panel h1 {
+  font-family: "Great Vibes";
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px red solid;
+}
+
+.login-panel h2 {
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+
+.login-panel h1 {
+  color: RGB(255, 179, 168);
+  font-family: "Great Vibes", cursive;
+  font-weight: bolder;
+}
+
+.login-panel button {
+  margin-left: 10px;
+  color: RGB(255, 179, 168);
+  background-color: #fff;
+  font-weight: bold;
+  border-color: #ccc;
+  box-shadow: #ccc;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.logout-button {
+  float: right;
+  /* margin: 10px; */
+  /* margin-righ t: 3%; */
+  padding: 10px;
+  border-radius: 30px !important;
+  color: black !important;
+  background-color: RGB(255, 179, 168) !important;
+  font-weight: bold !important;
+}
+
+.error-message {
+  position: relative;
+  width: 480px;
+  background-color: lightcoral;
+  color: #fff;
+  font-weight: bolder;
+  padding: 15px;
+  border-radius: 7px;
+  margin: 30px auto 20px auto;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+.add-application {
+  float: right;
+  top: 29%;
+  right: 5%;
+  float: right;
+}
+.add-application form {
+  position: relative;
+  float: right;
+  width: 500px;
+  margin: 0 10px 10px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+.add-application input {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  resize: none;
+}
+
+.add-application button {
+  padding: 10px;
+  border-radius: 30px !important;
+  color: black !important;
+  background-color: RGB(255, 179, 168) !important;
+  position: absolute;
+}
+
+.add-application select {
+  padding: 5px;
+  margin: 7px 7px 7px 0;
+  border-radius: 7px;
+}
+
+.add-application-form-handle {
+  float: right;
+  top: 5%;
+  right: 2%;
+  border-radius: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+}
+
+.add-application-form button {
+  bottom: -18px;
+  border: none;
+  border-radius: 30%;
+  width: 56px;
+  height: 36px;
+  margin-left: 2rem;
+}
+
+.add-application-form button:disabled {
+  background-color: #cccccc;
+}
+
+.add-application-button {
+  right: 18px;
+}
+
+.cancel-application-button {
+  right: 75px;
+}
+
+.Problmes {
+  list-style: none;
+}
+
+.application-panel {
+  margin-bottom: 5rem;
+}
+
+.collection-heading {
+  background: RGB(255, 179, 168);
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  margin: 20px 20px 20px 40px;
+  float: left;
+  width: 90%;
+
+  font-weight: bolder;
+  color: #fff;
+}
+
+.collection-heading button {
+  float: right;
+  border: RGB(255, 179, 168);
+  background-color: RGB(255, 179, 168);
+  color: #fff;
+  font-weight: bolder;
+}
+
+.application {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  margin: 20px 20px 20px 40px;
+  float: left;
+  width: 90%;
+}
+
+.application-context {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.disabled-link {
+  cursor: not-allowed;
+  color: black;
+  pointer-events: none;
+}
+
+.update-date {
+  font-style: italic;
+  margin: 5px;
+}
+
+.application h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.application button {
+  position: relative;
+  margin-right: 10px;
+  color: #fe6673;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+}
+
+.Leetcode-description-link .link-tip {
+  visibility: hidden;
+  background-color: RGB(255, 179, 168);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-weight: lighter;
+  font-size: small;
+  margin-left: 10px;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.Leetcode-description-link:hover .link-tip {
+  visibility: visible;
+}
+
+.application-activities button {
+  float: right;
+}
+
+.edit-application-form {
+  position: relative;
+  float: left;
+  margin: 10px auto auto 0;
+  padding: 5px;
+  right: 10px;
+}
+
+.edit-application-form input {
+  margin: 5px;
+  border-color: #cccccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 260px;
+  left: 30%;
+}
+
+textarea {
+  margin-top: 2rem;
+  margin: 5px;
+  border-color: #cccccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 260px;
+  left: 30%;
+}
+.edit-application-button {
+  float: right;
+}
+
+.edit-application-button--get_hired,
+.edit-application-button--no-selected {
+  float: left;
+  margin: 10px;
+}
+
+.histories {
+  font-size: 0.75em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.footer {
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: url("https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg");
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
