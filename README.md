@@ -16,13 +16,17 @@ This web application helps you track your Leetcode practice problems
 
 - Download the code to your local machine
 
-- Navigate to YOUR-CODE-PATH/ : `cd YOUR-CODE-PATH/`
+- Navigate to YOUR code path : `cd YOUR-CODE-PATH/`
 
-- `npm install` and then `npm run build` to install the dependencies, and then `npm start` to run the server
+- Navigate to your app path: `cd leetcode-record-app`
 
-- Go to `http://localhost:3000`
+- Two ways to run this app
 
-- To run the development server, use npm run dev, then go to http://localhost:4000
+  - 1.  `npm install` and then `npm run build` to install the dependencies, and then `npm start` to run the server: go to `http://localhost:4000`
+
+  - 2. front end + back end
+    - front end: `npm run dev` Go to `http://localhost:3000`
+    - back end: `node server.js`, run the server, go to `http://localhost:4000`
 
 #### Application rules
 
@@ -59,4 +63,3 @@ This web application helps you track your Leetcode practice problems
 
 - frontend: "proxy": "http://localhost:4000" in package.json
 - backend: PORT = 4000
-
